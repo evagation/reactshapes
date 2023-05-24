@@ -12,12 +12,13 @@ type Props = {
 export default function CardInput(props: Props) {
   return (
     <div className="flex gap-2 items-center">
-      <label className="font-medium">{props.title}</label>
+      <label htmlFor={props.title} className="font-medium">{props.title}</label>
       <input
         type="number"
         value={props.value}
         onChange={(e) => handleOnChange(e, props.setValue)}
-        name="edge"
+        name={props.title}
+        id={props.title}
         className="h-5 px-3 w-full proportional-nums leading-none border-solid border-2 border-primary rounded-md bg-transparent font-sans font-medium text-sm text-tertiary focus:outline-none focus:border-tertiary"
       />
       <label className="font-medium">{props.measure}</label>
