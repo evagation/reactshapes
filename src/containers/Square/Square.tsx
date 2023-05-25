@@ -4,6 +4,7 @@ import { useRef, useState } from "react";
 
 export default function Square() {
   const [side, setSide] = useState<InputType>("");
+
   const area = useRef<OutputType>();
   const perimeter = useRef<OutputType>();
   const diagonal = useRef<OutputType>();

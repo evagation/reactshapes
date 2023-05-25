@@ -17,7 +17,7 @@ export default function Trapezium() {
 
   return (
     <Card
-      title="Rectangulo"
+      title="Trapecio"
       img="img/shapes/Trapezium.png"
       input={
         <>

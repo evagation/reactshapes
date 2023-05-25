@@ -1,9 +1,13 @@
 import { ReactNode } from "react";
 
 type Props = {
+  // Url de la imagen.
   img: string;
+  // Los componentes necesarios para ingresar datos.
   input: ReactNode;
+  // Los componentes para visualizar resultados.
   output: ReactNode;
+  // Titulo para poner en la cabeza de la tarjeta.
   title: string;
 };
 
